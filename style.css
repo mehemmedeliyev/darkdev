@@ -1,0 +1,218 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box  ;
+    display: flex;
+    flex-direction: column;
+}
+/* ###########################  HEADER   #######################################  */
+#header1{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    
+}
+#header1 input{
+    margin:27px auto 10px auto;
+    height: 30px;
+    width: 600px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid grey;
+    cursor: pointer;
+    transition: 0.6s;
+}
+ #header1 input::placeholder{
+    text-align: center;
+    font-size: 17px;
+}
+#header1 input:hover{
+    width: 900px;
+    border: 1px solid black ;
+}
+#header2{
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+}
+.logo{
+    height: 70px;
+    width: 150px;
+    font-size: 45px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2E4053;
+    text-shadow: 1px -1px 5px #000000 ;
+    cursor: pointer;
+
+}
+
+.menyu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 750px;
+    
+}
+.menyu li{  
+display: inline-block;
+list-style-type: none;
+
+}
+.menyu a{
+display: inline-block;
+text-decoration: none;
+border: 2px solid #10ac84;
+padding: 15px 40px;
+color: rgb(104, 100, 100);
+font-size: 17px;
+border-radius: 7px;
+transition: 0.4s;
+}
+.menyu .men{
+    display: inline-block;
+text-decoration: none;
+background-color: #ee5253;
+border: none;
+padding: 15px 40px;
+color: rgb(241, 241, 241);
+font-size: 17px;
+border-radius: 7px;
+transition: 0.6s;
+}
+.menyu .men:hover{
+    background-color:#1dd1a1 ;
+}
+.menyu a:hover{
+    background-color: #10ac84;
+    color: white;
+    padding: 15px 50px;
+    
+}
+/* ###############################  CONTAINER  ################################################ */
+
+#container{
+    display: flex;
+    height: 500px;
+    width: 100%;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 500px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(255, 255, 255);
+}
+.box1 a{
+    position: relative;
+    bottom: 4px;
+    text-decoration: none;
+    color: rgb(85, 83, 83);
+    line-height: 52px;
+    margin-top: 10px;
+    border-bottom:1px solid rgb(214, 211, 211);
+    text-align: center;
+    transition: 0.3s;
+}
+.box1 a:hover{
+    color: rgb(0, 0, 0);
+}
+.box1 .best::after{
+    content: "";
+    width: 100%;
+    height: 0px;
+    opacity: 0.4;
+    position: absolute;
+   
+    background-color: #10ac84;
+    left: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+.box1 .best:hover::after{
+height: 62px;
+}
+.box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 500px;
+    background: radial-gradient(#c8d6e5  15%,white , #ffffff);
+}
+.box2 img{
+    height: 350px;
+    width: 300px;
+    transition: 1s;
+}
+.box2 img:hover{
+    transform: translate(20px,-20px);
+    height:370px ;
+    width: 320px;
+}
+.box3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 500px;
+}
+.box3 h6{
+    font-size: 20px;
+    margin:0px;
+}
+.box3 ul{
+    list-style-type: none;
+}
+.box3 a{
+    display: inline-block;
+    position: relative;
+    padding: 10px 30px;
+    color: rgb(19, 18, 18);
+    text-decoration: none;
+}
+.box3 .line::after{
+    content: "";
+    width: 0%;
+    height: .175rem;
+    background-color:red;
+    position: absolute;
+    left:50%;
+    bottom: 0;
+    transition: 0.4s;
+}
+.box3 .line:hover::after{
+    left: 0;
+    width: 100%;
+}
+
+/* #######################################   FOOTER     ################################################ */
+#footer{
+    display: flex;
+    justify-content: center;
+     align-items: center;    
+    flex-direction: column;
+    height: 120px;
+    width: 100%;
+    background-color: #2C3E50;
+} 
+#footer h3{
+    color: white;
+    text-align: center;
+}
+#footer .header2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 120px;
+    width: 56%;
+    color:rgb(255, 255, 255);
+}
